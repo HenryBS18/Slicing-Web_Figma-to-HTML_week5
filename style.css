@@ -1,0 +1,2129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins;
+}
+
+@media only screen and (max-width: 740px) {
+    header {
+        height: 90px;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: white;
+    }
+    
+    .header-component {
+        width: 100%;
+    
+        margin-left: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-name {
+        height: fit-content;
+        float: left;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-logo {
+        width: 60px;
+        height: 60px;
+    
+        float: left;
+    }
+    
+    .school-name {
+        height: fit-content;
+        width: 200px;
+        float: right;
+    
+        margin-left: 10px;
+    }
+    
+    .school-name a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sma-name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .official-name {
+        font-size: 12px;
+        font-weight: 500;
+    
+        margin-top: -5px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+        
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        width: fit-content;
+        
+        display: flex;
+        align-items: center;
+    
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    nav ul li a:hover {
+        color: #295AED;
+    }
+    
+    .body-component {
+        height: 170px;
+        width: 320px;
+    
+        position: absolute;
+        z-index: 1;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-top: 100px;
+        margin-left: 30px
+    }
+    
+    .text {
+        height: 100px;
+        width: 100%
+    }
+    
+    .welcome-text {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .content-text {
+        color: white;
+        font-size: 12px;
+    
+        margin-top: 9px;
+    }
+    
+    .buttons {
+        width: 310px;
+        height: 46px;
+    
+        margin-left: 5px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .buttons a {
+        text-decoration: none;
+    }
+    
+    .selengkapnya-button {
+        background-color: #EDA30E;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+    
+        height: 35px;
+        width: 150px;
+        border-radius: 30px;
+        border: 1px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .selengkapnya-button:active {
+        transform: scale(0.99);
+    }
+    
+    .selengkapnya-button:hover {
+        border: 1px outset #EDA30E;
+        background: transparent;
+        color: #EDA30E;
+    
+        cursor: pointer;
+    }
+    
+    .hubungi-button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+    
+        height: 35px;
+        width: 150px;
+        border-radius: 30px;
+        border: 1px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .hubungi-button:active {
+        transform: scale(0.99);
+    }
+    
+    .hubungi-button:hover {
+        border: 1px outset white;
+        background-color: transparent;
+        color: white;
+    
+        cursor: pointer;
+    }
+    
+    .background {
+        position: relative;
+    
+        width: 100%;
+        height: 380px;
+    }
+    
+    .body-background-front {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+    
+        background-image: url(Assets/background.webp);
+        background-size: cover;
+    }
+    
+    .body-background-back {
+        position: relative;
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: #11243A;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    .rectangle-grey-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita-title-header {
+        width: 100%;
+        height: 110px;
+    
+        position: relative;
+    
+        background-color: #E8E8E8;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .berita-body {
+        width: 100%;
+        height: 1150px;
+    
+        display: flex;
+        justify-content: center;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita {
+        width: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    
+        margin-top: 8px;
+    }
+    
+    .berita-rectangle-red {
+        width: 320px;
+        height: 200px;
+    
+        background-color: #631717;
+        border-radius: 10px;
+    }
+    
+    .berita-rectangle-red:hover {
+        opacity: 0.7;
+    }
+    
+    .berita-item {
+        width: 320px;
+    }
+    
+    .berita-item a {
+        text-decoration: none;
+    }
+    
+    .sosialiasi-text {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+    
+        margin-top: 16px;
+    }
+    
+    .deskripsi-text {
+        color: #797979;
+        font-size: 12px;
+    
+        margin-top: 16px;
+    }
+    
+    .rectangle-white-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: white;
+    }
+    
+    .prestasi-body {
+        width: 100%;
+        height: 480px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .prestasi-body-component {
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .gambar-prestasi {
+        width: 160px;
+        height: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    
+        margin-top: 20px;
+    }
+    
+    .gambar-prestasi img {
+        width: 160px;
+        height: 90px;
+    }
+    
+    .text-button-prestasi {
+        width: 200px;
+    }
+    
+    .text-button-prestasi a {
+        text-decoration: none;
+    }
+    
+    .text-prestasi-1 {
+        color: #203B6A;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .text-prestasi-2 {
+        color: #4B5964;
+        font-size: 12px;
+    
+        margin-top: 20px;
+    }
+    
+    .text-prestasi-3 {
+        color: #797979  ;
+        font-size: 10px;
+    
+        margin-top: 20px;
+    }
+    
+    .alumni-button {
+        width: 120px;
+        height: 40px;
+    
+        margin-top: 25px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        border-radius: 24px;
+        border: 1px;
+        background-color: #e8e6e6;
+        font-size: 12px;
+        font-weight: bold;
+        color: #203B6A;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .alumni-button:active {
+        transform: scale(0.99);
+    }
+    
+    .alumni-button:hover {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    
+        background-color: #CCCCCC;
+    }
+    
+    .author {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: #203B6A;
+        font-size: 20px;
+        font-weight: bold;
+    }    
+}
+
+@media only screen and (min-width: 740px) and (max-width: 900px) {
+    header {
+        height: 100px;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: white;
+    }
+    
+    .header-component {
+        width: 100%;
+    
+        margin-left: 40px;
+        margin-right: 70px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-name {
+        height: fit-content;
+        float: left;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-logo {
+        width: 70px;
+        height: 70px;
+    
+        float: left;
+    }
+    
+    .school-name {
+        height: fit-content;
+        float: right;
+    
+        margin-left: 10px;
+    }
+    
+    .school-name a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sma-name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .official-name {
+        font-size: 14px;
+        font-weight: 500;
+    
+        margin-top: -10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+        
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        width: fit-content;
+        
+        display: flex;
+        align-items: center;
+    
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    nav ul li a:hover {
+        color: #295AED;
+    }
+    
+    nav ul ul {
+        display: none;
+        position: absolute;
+    }
+    
+    nav ul li:hover > ul {
+        display: block;
+        height: 100px;
+        width: 150px;
+        background-color: #797979;
+    
+        position: absolute;
+        
+    }
+    
+    .body-component {
+        height: 170px;
+        width: 470px;
+    
+        position: absolute;
+        z-index: 1;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-top: 150px;
+        margin-left: 100px
+    }
+    
+    .text {
+        height: 120px;
+        width: 100%
+    }
+    
+    .welcome-text {
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .content-text {
+        color: white;
+        font-size: 15px;
+    
+        margin-top: 5px;
+    }
+    
+    .buttons {
+        width: 310px;
+        height: 35px;
+    
+        margin-left: 5px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .buttons a {
+        text-decoration: none;
+    }
+    
+    .selengkapnya-button {
+        background-color: #EDA30E;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+    
+        height: 35px;
+        width: 150px;
+        border-radius: 30px;
+        border: 1px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .selengkapnya-button:active {
+        transform: scale(0.99);
+    }
+    
+    .selengkapnya-button:hover {
+        border: 1px outset #EDA30E;
+        background: transparent;
+        color: #EDA30E;
+    
+        cursor: pointer;
+    }
+    
+    .hubungi-button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+    
+        height: 35px;
+        width: 150px;
+        border-radius: 30px;
+        border: 1px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .hubungi-button:active {
+        transform: scale(0.99);
+    }
+    
+    .hubungi-button:hover {
+        border: 1px outset white;
+        background-color: transparent;
+        color: white;
+    
+        cursor: pointer;
+    }
+    
+    .background {
+        position: relative;
+    
+        width: 100%;
+        height: 470px;
+    }
+    
+    .body-background-front {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+    
+        background-image: url(Assets/background.webp);
+        background-size: cover;
+    }
+    
+    .body-background-back {
+        position: relative;
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: #11243A;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    .rectangle-grey-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita-title-header {
+        width: 100%;
+        height: 110px;
+    
+        position: relative;
+    
+        background-color: #E8E8E8;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .berita-body {
+        width: 100%;
+        height: 800px;
+    
+        display: flex;
+        justify-content: center;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita {
+        width: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    
+        margin-top: 8px;
+    }
+    
+    .berita-rectangle-red {
+        width: 330px;
+        height: 210px;
+    
+        background-color: #631717;
+        border-radius: 10px;
+    }
+    
+    .berita-rectangle-red:hover {
+        opacity: 0.7;
+    }
+    
+    .berita-item {
+        width: 330px;
+    }
+    
+    .berita-item a {
+        text-decoration: none;
+    }
+    
+    .sosialiasi-text {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+    
+        margin-top: 8px;
+    }
+    
+    .deskripsi-text {
+        color: #797979;
+        font-size: 12px;
+    
+        margin-top: 8px;
+    }
+    
+    .rectangle-white-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: white;
+    }
+    
+    
+    .prestasi-body {
+        width: 100%;
+        height: 320px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .prestasi-body-component {
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    .gambar-prestasi {
+        width: 347px;
+        height: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    
+        margin-top: 20px;
+    }
+    
+    .gambar-prestasi img {
+        width: 170px;
+        height: 100px;
+    }
+    
+    .text-button-prestasi {
+        width: 380px;
+
+        margin-top: 20px;
+    }
+    
+    .text-button-prestasi a {
+        text-decoration: none;
+    }
+    
+    .text-prestasi-1 {
+        color: #203B6A;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .text-prestasi-2 {
+        color: #4B5964;
+        font-size: 12px;
+    
+        margin-top: 10px;
+    }
+    
+    .text-prestasi-3 {
+        color: #797979  ;
+        font-size: 10px;
+    
+        margin-top: 10px;
+        
+    }
+    
+    .alumni-button {
+        width: 95px;
+        height: 28px;
+    
+        margin-top: 25px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        
+        border-radius: 24px;
+        border: 1px;
+        background-color: #e8e6e6;
+        font-size: 8px;
+        font-weight: bold;
+        color: #203B6A;
+    
+        transition: background-color 0.5s ease;
+    }
+
+    .alumni-button:active {
+        transform: scale(0.99);
+    }
+    
+    .alumni-button:hover {
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+    
+        background-color: #CCCCCC;
+    }
+    
+    .author {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: #203B6A;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1020px) {
+    header {
+        height: 120px;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: white;
+    }
+    
+    .header-component {
+        width: 100%;
+    
+        margin-left: 70px;
+        margin-right: 70px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-name {
+        height: fit-content;
+        float: left;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-logo {
+        width: 70px;
+        height: 70px;
+    
+        float: left;
+    }
+    
+    .school-name {
+        height: fit-content;
+        float: right;
+    
+        margin-left: 10px;
+    }
+    
+    .school-name a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sma-name {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .official-name {
+        font-size: 14px;
+        font-weight: 500;
+    
+        margin-top: -10px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+        
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        width: fit-content;
+        
+        display: flex;
+        align-items: center;
+    
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    nav ul li a:hover {
+        color: #295AED;
+    }
+    
+    .body-component {
+        height: 226px;
+        width: 620px;
+    
+        position: absolute;
+        z-index: 1;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-top: 188px;
+        margin-left: 140px
+    }
+    
+    .text {
+        height: 156px;
+        width: 100%
+    }
+    
+    .welcome-text {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .content-text {
+        color: white;
+        font-size: 20px;
+    
+        margin-top: 9px;
+    }
+    
+    .buttons {
+        width: 378px;
+        height: 46px;
+    
+        margin-left: 5px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .buttons a {
+        text-decoration: none;
+    }
+    
+    .selengkapnya-button {
+        background-color: #EDA30E;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    
+        height: 46px;
+        width: 184px;
+        border-radius: 30px;
+        border: 1px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .selengkapnya-button:active {
+        transform: scale(0.99);
+    }
+    
+    .selengkapnya-button:hover {
+        border: 1px outset #EDA30E;
+        background: transparent;
+        color: #EDA30E;
+    
+        cursor: pointer;
+    }
+    
+    .hubungi-button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+    
+        height: 46px;
+        width: 184px;
+        border-radius: 30px;
+        border: 1px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .hubungi-button:active {
+        transform: scale(0.99);
+    }
+    
+    .hubungi-button:hover {
+        border: 1px outset white;
+        background-color: transparent;
+        color: white;
+    
+        cursor: pointer;
+    }
+    
+    .background {
+        position: relative;
+    
+        width: 100%;
+        height: 580px;
+    }
+    
+    .body-background-front {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+    
+        background-image: url(Assets/background.webp);
+        background-size: cover;
+    }
+    
+    .body-background-back {
+        position: relative;
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: #11243A;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    .rectangle-grey-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita-title-header {
+        width: 100%;
+        height: 110px;
+    
+        position: relative;
+    
+        background-color: #E8E8E8;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .berita-body {
+        width: 100%;
+        height: 900px;
+    
+        display: flex;
+        justify-content: center;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita {
+        width: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    
+        margin-top: 8px;
+    }
+    
+    .berita-rectangle-red {
+        width: 360px;
+        height: 240px;
+    
+        background-color: #631717;
+        border-radius: 10px;
+    }
+    
+    .berita-rectangle-red:hover {
+        opacity: 0.7;
+    }
+    
+    .berita-item {
+        width: 360px;
+    }
+    
+    .berita-item a {
+        text-decoration: none;
+    }
+    
+    .sosialiasi-text {
+        color: black;
+        font-size: 21px;
+        font-weight: bold;
+    
+        margin-top: 16px;
+    }
+    
+    .deskripsi-text {
+        color: #797979;
+        font-size: 13px;
+    
+        margin-top: 16px;
+    }
+    
+    .rectangle-white-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: white;
+    }
+    
+    .prestasi-body {
+        width: 100%;
+        height: 420px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .prestasi-body-component {
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    .gambar-prestasi {
+        width: 407px;
+        height: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    
+        margin-top: 20px;
+    }
+    
+    .gambar-prestasi img {
+        width: 200px;
+        height: 130px;
+    }
+    
+    .text-button-prestasi {
+        width: 400px;
+    }
+    
+    .text-button-prestasi a {
+        text-decoration: none;
+    }
+    
+    .text-prestasi-1 {
+        color: #203B6A;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .text-prestasi-2 {
+        color: #4B5964;
+        font-size: 14px;
+    
+        margin-top: 20px;
+    }
+    
+    .text-prestasi-3 {
+        color: #797979  ;
+        font-size: 10px;
+    
+        margin-top: 20px;
+        
+    }
+    
+    .alumni-button {
+        width: 140px;
+        height: 40px;
+    
+        margin-top: 25px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        border-radius: 24px;
+        border: 1px;
+        background-color: #e8e6e6;
+        font-size: 18px;
+        font-weight: bold;
+        color: #203B6A;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .alumni-button:active {
+        transform: scale(0.99);
+    }
+    
+    .alumni-button:hover {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    
+        background-color: #CCCCCC;
+    }
+    
+    .author {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: #203B6A;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1140px) {
+    header {
+        height: 120px;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: white;
+    }
+    
+    .header-component {
+        width: 100%;
+    
+        margin-left: 70px;
+        margin-right: 70px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-name {
+        height: fit-content;
+        float: left;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-logo {
+        width: 75px;
+        height: 75px;
+    
+        float: left;
+    }
+    
+    .school-name {
+        height: fit-content;
+        float: right;
+    
+        margin-left: 10px;
+    }
+    
+    .school-name a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sma-name {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .official-name {
+        font-size: 16px;
+        font-weight: 500;
+    
+        margin-top: -10px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+        
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        width: fit-content;
+        
+        display: flex;
+        align-items: center;
+    
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    nav ul li a:hover {
+        color: #295AED;
+    }
+    
+    .body-component {
+        height: 226px;
+        width: 653px;
+    
+        position: absolute;
+        z-index: 1;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-top: 188px;
+        margin-left: 140px
+    }
+    
+    .text {
+        height: 156px;
+        width: 100%
+    }
+    
+    .welcome-text {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .content-text {
+        color: white;
+        font-size: 20px;
+    
+        margin-top: 9px;
+    }
+    
+    .buttons {
+        width: 378px;
+        height: 46px;
+    
+        margin-left: 5px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .buttons a {
+        text-decoration: none;
+    }
+    
+    .selengkapnya-button {
+        background-color: #EDA30E;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    
+        height: 46px;
+        width: 184px;
+        border-radius: 30px;
+        border: 1px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .selengkapnya-button:active {
+        transform: scale(0.99);
+    }
+    
+    .selengkapnya-button:hover {
+        border: 1px outset #EDA30E;
+        background: transparent;
+        color: #EDA30E;
+    
+        cursor: pointer;
+    }
+    
+    .hubungi-button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+    
+        height: 46px;
+        width: 184px;
+        border-radius: 30px;
+        border: 1px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .hubungi-button:active {
+        transform: scale(0.99);
+    }
+    
+    .hubungi-button:hover {
+        border: 1px outset white;
+        background-color: transparent;
+        color: white;
+    
+        cursor: pointer;
+    }
+    
+    .background {
+        position: relative;
+    
+        width: 100%;
+        height: 580px;
+    }
+    
+    .body-background-front {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+    
+        background-image: url(Assets/background.webp);
+        background-size: cover;
+    }
+    
+    .body-background-back {
+        position: relative;
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: #11243A;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    .rectangle-grey-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita-title-header {
+        width: 100%;
+        height: 110px;
+    
+        position: relative;
+    
+        background-color: #E8E8E8;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .berita-body {
+        width: 100%;
+        height: 900px;
+    
+        display: flex;
+        justify-content: center;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita {
+        width: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    
+        margin-top: 8px;
+    }
+    
+    .berita-rectangle-red {
+        width: 360px;
+        height: 240px;
+    
+        background-color: #631717;
+        border-radius: 10px;
+    }
+    
+    .berita-rectangle-red:hover {
+        opacity: 0.7;
+    }
+    
+    .berita-item {
+        width: 360px;
+    }
+    
+    .berita-item a {
+        text-decoration: none;
+    }
+    
+    .sosialiasi-text {
+        color: black;
+        font-size: 21px;
+        font-weight: bold;
+    
+        margin-top: 16px;
+    }
+    
+    .deskripsi-text {
+        color: #797979;
+        font-size: 13px;
+    
+        margin-top: 16px;
+    }
+    
+    .rectangle-white-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: white;
+    }
+    
+    .prestasi-body {
+        width: 100%;
+        height: 580px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .prestasi-body-component {
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    
+    .gambar-prestasi {
+        width: 447px;
+        height: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    
+        margin-top: 20px;
+    }
+    
+    .gambar-prestasi img {
+        width: 220px;
+        height: 150px;
+    }
+    
+    .text-button-prestasi {
+        width: 400px;
+    }
+    
+    .text-button-prestasi a {
+        text-decoration: none;
+    }
+    
+    .text-prestasi-1 {
+        color: #203B6A;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .text-prestasi-2 {
+        color: #4B5964;
+        font-size: 14px;
+    
+        margin-top: 20px;
+    }
+    
+    .text-prestasi-3 {
+        color: #797979  ;
+        font-size: 12px;
+    
+        margin-top: 20px;
+        
+    }
+    
+    .alumni-button {
+        width: 140px;
+        height: 40px;
+    
+        margin-top: 25px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        border-radius: 24px;
+        border: 1px;
+        background-color: #e8e6e6;
+        font-size: 18px;
+        font-weight: bold;
+        color: #203B6A;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .alumni-button:active {
+        transform: scale(0.99);
+    }
+    
+    .alumni-button:hover {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    
+        background-color: #CCCCCC;
+    }
+    
+    .author {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: #203B6A;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+}
+
+@media only screen and (min-width: 1140px) {
+    header {
+        height: 120px;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: white;
+    }
+    
+    .header-component {
+        width: 100%;
+    
+        margin-left: 70px;
+        margin-right: 70px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-name {
+        height: fit-content;
+        float: left;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-logo {
+        width: 75px;
+        height: 75px;
+    
+        float: left;
+    }
+    
+    .school-name {
+        height: fit-content;
+        float: right;
+    
+        margin-left: 10px;
+    }
+    
+    .school-name a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sma-name {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .official-name {
+        font-size: 16px;
+        font-weight: 500;
+    
+        margin-top: -10px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 21px;
+        
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        width: fit-content;
+        
+        display: flex;
+        align-items: center;
+    
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    nav ul li a:hover {
+        color: #295AED;
+    }
+    
+    .body-component {
+        height: 226px;
+        width: 653px;
+    
+        position: absolute;
+        z-index: 1;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin-top: 188px;
+        margin-left: 140px
+    }
+    
+    .text {
+        height: 156px;
+        width: 100%
+    }
+    
+    .welcome-text {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .content-text {
+        color: white;
+        font-size: 20px;
+    
+        margin-top: 9px;
+    }
+    
+    .buttons {
+        width: 378px;
+        height: 46px;
+    
+        margin-left: 5px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .buttons a {
+        text-decoration: none;
+    }
+    
+    .selengkapnya-button {
+        background-color: #EDA30E;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    
+        height: 46px;
+        width: 184px;
+        border-radius: 30px;
+        border: 1px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .selengkapnya-button:active {
+        transform: scale(0.99);
+    }
+    
+    .selengkapnya-button:hover {
+        border: 1px outset #EDA30E;
+        background: transparent;
+        color: #EDA30E;
+    
+        cursor: pointer;
+    }
+    
+    .hubungi-button {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+    
+        height: 46px;
+        width: 184px;
+        border-radius: 30px;
+        border: 1px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .hubungi-button:active {
+        transform: scale(0.99);
+    }
+    
+    .hubungi-button:hover {
+        border: 1px outset white;
+        background-color: transparent;
+        color: white;
+    
+        cursor: pointer;
+    }
+    
+    .background {
+        position: relative;
+    
+        width: 100%;
+        height: 580px;
+    }
+    
+    .body-background-front {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+    
+        background-image: url(Assets/background.webp);
+        background-size: cover;
+    }
+    
+    .body-background-back {
+        position: relative;
+    
+        width: 100%;
+        height: 100%;
+    
+        background-color: #11243A;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    .rectangle-grey-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita-title-header {
+        width: 100%;
+        height: 110px;
+    
+        position: relative;
+    
+        background-color: #E8E8E8;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .berita-body {
+        width: 100%;
+        height: 490px;
+    
+        display: flex;
+        justify-content: center;
+    
+        background-color: #E8E8E8;
+    }
+    
+    .berita {
+        width: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    
+        margin-top: 8px;
+    }
+    
+    .berita-rectangle-red {
+        width: 360px;
+        height: 240px;
+    
+        background-color: #631717;
+        border-radius: 10px;
+    }
+    
+    .berita-rectangle-red:hover {
+        opacity: 0.7;
+    }
+    
+    .berita-item {
+        width: 360px;
+    }
+    
+    .berita-item a {
+        text-decoration: none;
+    }
+    
+    .sosialiasi-text {
+        color: black;
+        font-size: 21px;
+        font-weight: bold;
+    
+        margin-top: 16px;
+    }
+    
+    .deskripsi-text {
+        color: #797979;
+        font-size: 13px;
+    
+        margin-top: 16px;
+    }
+    
+    .rectangle-white-100 {
+        width: 100%;
+        height: 100px;
+    
+        background-color: white;
+    }
+    
+    .prestasi-body {
+        width: 100%;
+        height: 580px;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .prestasi-body-component {
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .gambar-prestasi {
+        width: 530px;
+        height: fit-content;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+    
+        margin-top: 20px;
+    }
+    
+    .gambar-prestasi img {
+        width: 260px;
+        height: 190px;
+    }
+    
+    .text-button-prestasi {
+        width: 480px;
+    }
+    
+    .text-button-prestasi a {
+        text-decoration: none;
+    }
+    
+    .text-prestasi-1 {
+        color: #203B6A;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    .text-prestasi-2 {
+        color: #4B5964;
+        font-size: 22px;
+    
+        margin-top: 20px;
+    }
+    
+    .text-prestasi-3 {
+        color: #797979  ;
+        font-size: 14px;
+    
+        margin-top: 20px;
+        
+    }
+    
+    .alumni-button {
+        width: 140px;
+        height: 40px;
+    
+        margin-top: 25px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        border-radius: 24px;
+        border: 1px;
+        background-color: #e8e6e6;
+        font-size: 18px;
+        font-weight: bold;
+        color: #203B6A;
+    
+        transition: background-color 0.5s ease;
+    }
+    
+    .alumni-button:active {
+        transform: scale(0.99);
+    }
+    
+    .alumni-button:hover {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    
+        background-color: #CCCCCC;
+    }
+    
+    .author {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        color: #203B6A;
+        font-size: 30px;
+        font-weight: bold;
+    }    
+}
